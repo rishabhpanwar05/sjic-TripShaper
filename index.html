@@ -13,6 +13,24 @@
   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#fff">
   <link rel="stylesheet" href="templates/landio.css">
+  
+  <script>
+        function detectmob() { 
+           if( navigator.userAgent.match(/Android/i)
+           || navigator.userAgent.match(/webOS/i)
+           || navigator.userAgent.match(/iPhone/i)
+           || navigator.userAgent.match(/iPad/i)
+           || navigator.userAgent.match(/iPod/i)
+           || navigator.userAgent.match(/BlackBerry/i)
+           || navigator.userAgent.match(/Windows Phone/i)
+           ){
+              return true;
+            }
+           else {
+              return false;
+            }
+          }
+  </script>
 
   <style>
     body, html {
@@ -66,58 +84,10 @@
 <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">
+      
       <img src="templates/TripShaper.png" style="background-color: transparent;height: 60%;width: 60%;">
       <span class="sr-only">TripShaper Inc.</span>
     </a>
-    <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
-      &#9776;
-    </a>
-    <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
-      <span class="icon-user"></span>
-    </a>
-    <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
-      <ul class="nav navbar-nav pull-xs-right">
-
-
-        <li class="nav-item dropdown hidden-sm-down textselect-off">
-          <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="face5.jpg" height="40" width="40" alt="Avatar" class="img-circle">
-          </a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
-            <div class="media">
-              <div class="media-left">
-                <img src="face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
-              </div>
-              <div class="media-body media-middle">
-                <h5 class="media-heading">SRK</h5>
-              </div>
-            </div>
-            <a href="#" class="dropdown-item text-uppercase">View Trips</a>
-            <a href="#" class="dropdown-item text-uppercase">Plan a new trip</a>
-            <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
-      <div class="media m-t-1">
-        <div class="media-left">
-          <img src="templates/face5.jpg" height="60" width="60" alt="Avatar" class="img-circle">
-        </div>
-        <div class="media-body media-middle">
-          <h5 class="media-heading">Joel Fisher</h5>
-          <h6>hey@joelfisher.com</h6>
-        </div>
-      </div>
-      <a href="#" class="dropdown-item text-uppercase">View posts</a>
-      <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
-      <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
-      <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-      <a href="#" class="btn-circle has-gradient pull-xs-right m-b-1">
-        <span class="sr-only">Edit</span>
-        <span class="icon-edit"></span>
-      </a>
-    </div>
   </div>
 </nav>
 
@@ -158,17 +128,17 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-block">
-            <img src="university.png" style="height: 20%;width: 20%;"><br>
+            <img src="templates/university.png" style="height: 20%;width: 20%;"><br>
             <br><h4 class="card-title">150</h4>
             <h6 class="card-subtitle text-muted">Cities</h6>
-            <p class="card-text"> You focus on making memories, we will plan the rest! Covering cities from 4 continents.</p>
+            <p class="card-text"> You focus on making memories, we will plan the rest! Covering cities from 6 continents. Want Antarctica? We might plan that as well!</p>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card">
           <div class="card-block">
-            <img src="bag.png" style="height: 20%;width: 20%;"><br>
+            <img src="templates/bag.png" style="height: 20%;width: 20%;"><br>
             <br><h4 class="card-title">Portable</h4>
             <h6 class="card-subtitle text-muted">Trip Wallet</h6>
             <p class="card-text">One stop platform that keeps all the pertinent bookings made on even third party websites</p>
@@ -178,7 +148,7 @@
       <div class="col-md-4">
         <div class="card m-b-0">
           <div class="card-block">
-            <img src="giftbox.png" style="height: 20%;width: 20%;"><br>
+            <img src="templates/giftbox.png" style="height: 20%;width: 20%;"><br>
             <br><h4 class="card-title">Free</h4>
             <h6 class="card-subtitle text-muted">Forever and ever</h6>
             <p class="card-text">We are here to help you make memories, and memories are free. No hidden charges whatsoever</p>
@@ -189,19 +159,15 @@
   </div>
 </section>
 
-
 <!-- Video
 ================================================== -->
 
 <section class="section-video text-xs-center wp wp-4">
-
   <iframe frameborder="0" width="90%" height="650" src="https://biteable.com/watch/embed/advertising-1-1429226"></iframe>
 </section>
 
-
 <!-- Pricing
 ================================================== -->
-
 
 
 
@@ -266,50 +232,12 @@
 ================================================== -->
 
 
-
 <!-- News
 ================================================== -->
 
 
 <!-- Sign Up
 ================================================== -->
-
-<section class="section-signup bg-faded">
-  <div class="container">
-    <h3 class="text-xs-center m-b-3">Sign up!</h3>
-    <form>
-      <div class="row">
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group has-icon-left form-control-name">
-            <label class="sr-only" for="inputName">Your name</label>
-            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
-          </div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group has-icon-left form-control-email">
-            <label class="sr-only" for="inputEmail">Email address</label>
-            <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
-          </div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group has-icon-left form-control-password">
-            <label class="sr-only" for="inputPassword">Enter a password</label>
-            <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
-          </div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Sign up for free!</button>
-          </div>
-        </div>
-      </div>
-      <label class="c-input c-checkbox">
-        <input type="checkbox" checked>
-        <span class="c-indicator"></span> I agree to TripShaper’s <a href="#">terms of service</a>
-      </label>
-    </form>
-  </div>
-</section>
 
 
 <!-- Footer
